@@ -13,7 +13,9 @@ export const getStaticProps = async () => {
     };
 };
 
-const Ninjas = ({ ninjas }) => {
+const Ninjas = (props) => {
+    const { ninjas } = props;
+
     return (
         <div>
             <h1>All Ninjas</h1>
